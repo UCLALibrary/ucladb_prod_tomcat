@@ -1211,7 +1211,7 @@
   <img src="ui/ucladb/images/Aeon-Request-material.jpg" alt="Select items from collection"/></a>
 </xsl:if>
 
-<xsl:if test="(. = 'yrspeip**') or (. = 'yrspinc') or (. = 'yrspmin') or (. = 'yrspo*') or (. = 'yrspo**') or (. = 'yrspo***') or (. = 'yrsprpr') or (. = 'yrspsr') or (. = 'yrspstax') or (. = 'yrspvault')">
+<xsl:if test="(. = 'yrspeip**') or (. = 'yrspinc') or (. = 'yrspmin') or (. = 'yrspo*') or (. = 'yrspo**') or (. = 'yrspo***') or (. = 'yrsprpr') or (. = 'yrspsr') or (. = 'yrspstax') or (. = 'yrspvault') or (. = 'yrspcbc*') or (. = 'yrspsafe')">
   <a href="http://webservices.library.ucla.edu/aeon/index.jsp?bibID={$bibID}" target="_blank">
   <img src="ui/ucladb/images/Aeon-Request-material.jpg" alt="Select items from collection"/></a>
 </xsl:if>
