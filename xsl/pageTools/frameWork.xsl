@@ -153,13 +153,13 @@
             }
           </script>
 
-<script type="text/javascript">
+<!--script type="text/javascript">
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-32672693-1']);
 _gaq.push(['_setDomainName', 'library.ucla.edu']);
 _gaq.push(['_trackPageview']);
 (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
-</script>
+</script-->
 
           <script type="text/javascript" src="{$jscript-loc}pageInputFocus.js"/>
 
@@ -291,6 +291,13 @@ _gaq.push(['_trackPageview']);
             </script>
          </xsl:if>
          <xsl:call-template name="doAfterPageLoad"/>
+<xsl:comment>Google Tag Manager</xsl:comment>
+<noscript>
+<iframe src="//www.googletagmanager.com/ns.html?id=GTM-KDBHK2" height="0" width="0" style="display:none;visibility:hidden">
+</iframe>
+</noscript>
+<script type="text/javascript" src="{$jscript-loc}gtm.js"/>
+<xsl:comment>End Google Tag Manager</xsl:comment>
       </body>
    </html>
 
