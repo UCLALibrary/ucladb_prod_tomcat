@@ -291,6 +291,13 @@ _gaq.push(['_trackPageview']);
             </script>
          </xsl:if>
          <xsl:call-template name="doAfterPageLoad"/>
+<xsl:comment>Google Tag Manager</xsl:comment>
+<noscript>
+<iframe src="//www.googletagmanager.com/ns.html?id=GTM-T2SXV2" height="0" width="0" style="display:none;visibility:hidden">
+</iframe>
+</noscript>
+<script type="text/javascript" src="{$jscript-loc}gtm.js"/>
+<xsl:comment>End Google Tag Manager</xsl:comment>
       </body>
    </html>
 
