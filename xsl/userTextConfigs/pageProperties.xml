@@ -132,7 +132,7 @@
    <!-- ## Browse Bar Button Display Order ## -->
    <browseBarButtonOrder>
       <button name="page.searchResults.browseBar.print.button"/>
-      <button name="page.searchResults.browseBar.export.button"/>
+      <!--button name="page.searchResults.browseBar.export.button"/-->
       <button name="page.searchResults.browseBar.email.button"/>
       <button name="page.searchResults.browseBar.addToList.button"/>
       <button name="page.searchResults.browseBar.delete.button"/>
