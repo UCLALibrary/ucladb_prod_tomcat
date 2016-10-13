@@ -451,7 +451,7 @@
 <displayTag field="772" indicator1="X" indicator2="X" subfield="iabst"/>
 </displayTags>
 <displayTags label="In:">
-<displayTag field="773" indicator1="X" indicator2="X" subfield="iabst"/>
+<displayTag field="773" indicator1="X" indicator2="X" subfield="iabgstwx"/>
 </displayTags>
 <displayTags label="Other edition:">
 <displayTag field="775" indicator1="X" indicator2="X" subfield="iabst"/>
