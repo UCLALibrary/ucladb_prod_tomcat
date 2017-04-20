@@ -415,6 +415,7 @@
 <displayTag field="540" indicator1="X" indicator2="X" subfield="abcd"/>
 <displayTag field="545" indicator1="X" indicator2="X" subfield="ab"/>
 <displayTag field="546" indicator1="X" indicator2="X" subfield="ab"/>
+<displayTag field="550" indicator1="X" indicator2="X" subfield="a"/>
 <displayTag field="555" indicator1="X" indicator2="X" subfield="ab"/>
 <displayTag field="561" indicator1="X" indicator2="X" subfield="a"/>
 <displayTag field="563" indicator1="X" indicator2="X" subfield="a"/>
