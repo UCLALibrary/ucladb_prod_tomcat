@@ -179,7 +179,7 @@
     <displayTags label="ISSN:">
         <displayTag field="022" indicator1="X" indicator2="X" subfield="a"/>
     </displayTags>-->
-<!--
+
     <displayTags label="Description:">
         <displayTag field="250" indicator1="X" indicator2="X" subfield="ab"/>
         <displayTag field="254" indicator1="X" indicator2="X" subfield="a"/>
@@ -197,7 +197,6 @@
         <displayTag field="351" indicator1="X" indicator2="X" subfield="abc"/>
         <displayTag field="362" indicator1="X" indicator2="X" subfield="a"/>
     </displayTags>
--->
 
 <displayTags label="Series:">
 <displayTag field="400" indicator1="X" indicator2="X" subfield="abcdeutnplkfgv" redirect="title" redirectOn="tnp"/>
