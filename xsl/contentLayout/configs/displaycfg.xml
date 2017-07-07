@@ -150,7 +150,7 @@
 <displayTags label="Physical Description:">
 <!--displayTag field="7107"/-->
 <displayTag field="300" indicator1="X" indicator2="X" subfield="abcdefg3"/>
-<displayTag field="351" indicator1="X" indicator2="X" subfield="abc3"/>
+<!--displayTag field="351" indicator1="X" indicator2="X" subfield="abc3"/-->
 </displayTags>
 
     <displayTags label="ONLINE ACCESS:">
@@ -181,21 +181,21 @@
     </displayTags>-->
 
     <displayTags label="Description:">
-        <displayTag field="250" indicator1="X" indicator2="X" subfield="ab"/>
+        <!--displayTag field="250" indicator1="X" indicator2="X" subfield="ab"/-->
         <displayTag field="254" indicator1="X" indicator2="X" subfield="a"/>
-        <displayTag field="255" indicator1="X" indicator2="X" subfield="abcde"/>
-        <displayTag field="507" indicator1="X" indicator2="X" subfield="ab"/>
+        <!--displayTag field="255" indicator1="X" indicator2="X" subfield="abcde"/-->
+        <!--displayTag field="507" indicator1="X" indicator2="X" subfield="ab"/-->
         <displayTag field="256" indicator1="X" indicator2="X" subfield="a"/>
         <displayTag field="516" indicator1="X" indicator2="X" subfield="a"/>
         <displayTag field="753" indicator1="X" indicator2="X" subfield="abc"/>
         <displayTag field="755" indicator1="X" indicator2="X" subfield="axyz"/>
-        <displayTag field="300" indicator1="X" indicator2="X" subfield="abcefg"/>
+        <!--displayTag field="300" indicator1="X" indicator2="X" subfield="abcefg"/-->
         <displayTag field="306" indicator1="X" indicator2="X" subfield="a"/>
         <displayTag field="310" indicator1="X" indicator2="X" subfield="a"/>
         <displayTag field="515" indicator1="X" indicator2="X" subfield="a"/>
         <displayTag field="340" indicator1="X" indicator2="X" subfield="abcdefhi"/>
         <displayTag field="351" indicator1="X" indicator2="X" subfield="abc"/>
-        <displayTag field="362" indicator1="X" indicator2="X" subfield="a"/>
+        <!--displayTag field="362" indicator1="X" indicator2="X" subfield="a"/-->
     </displayTags>
 
 <displayTags label="Series:">
