@@ -1177,42 +1177,42 @@
 	<xsl:if test="string-length(.)">
 
 <xsl:if test="(. = 'arsc') or (. = 'arscrr') or (. = 'arscsr') or (. = 'musc') or (. = 'musc*') or (. = 'musc**') or (. = 'musc***') or (. = 'muscarch') or (. = 'muscfacs') or (. = 'muscfolio')">
-  <a href="http://webservices.library.ucla.edu/aeon/index.jsp?bibID={$bibID}" target="_blank">
+  <a href="http://webservices-test.library.ucla.edu/aeon/index.jsp?bibID={$bibID}" target="_blank">
   <img src="ui/ucladb/images/Aeon-Request-material.jpg" alt="Select items from collection"/></a>
 </xsl:if>
 
 <xsl:if test="(. = 'muscmanu') or (. = 'muscmini') or (. = 'muscobl') or (. = 'muscoblfac') or (. = 'muscrf') or (. = 'muscsdr') or (. = 'muscsheet') or (. = 'muscspc') or (. = 'muscsr') or (. = 'muscstax')">
-  <a href="http://webservices.library.ucla.edu/aeon/index.jsp?bibID={$bibID}" target="_blank">
+  <a href="http://webservices-test.library.ucla.edu/aeon/index.jsp?bibID={$bibID}" target="_blank">
   <img src="ui/ucladb/images/Aeon-Request-material.jpg" alt="Select items from collection"/></a>
 </xsl:if>
 
 <xsl:if test="(. = 'musctoc') or (. = 'musctoc*') or (. = 'srar2') or (. = 'bihimi') or (. = 'bihipam') or (. = 'bihirest')">
-  <a href="http://webservices.library.ucla.edu/aeon/index.jsp?bibID={$bibID}" target="_blank">
+  <a href="http://webservices-test.library.ucla.edu/aeon/index.jsp?bibID={$bibID}" target="_blank">
   <img src="ui/ucladb/images/Aeon-Request-material.jpg" alt="Select items from collection"/></a>
 </xsl:if>
 
 <xsl:if test="(. = 'bisc') or (. = 'bisccg') or (. = 'bisccg*') or (. = 'bisccg**') or (. = 'bisccgma') or (. = 'biscrbr') or (. = 'biscrbr*') or (. = 'biscrbrb') or (. = 'biscsr') or (. = 'biscvlt')">
-  <a href="http://webservices.library.ucla.edu/aeon/index.jsp?bibID={$bibID}" target="_blank">
+  <a href="http://webservices-test.library.ucla.edu/aeon/index.jsp?bibID={$bibID}" target="_blank">
   <img src="ui/ucladb/images/Aeon-Request-material.jpg" alt="Select items from collection"/></a>
 </xsl:if>
 
 <xsl:if test="(. = 'biscvlt*') or (. = 'biscvlt**') or (. = 'scscmorgan') or (. = 'srbi2') or (. = 'sryr7') or (. = 'uaref') or (. = 'uasr') or (. = 'spacq') or (. = 'spcat') or (. = 'srsp')">
-  <a href="http://webservices.library.ucla.edu/aeon/index.jsp?bibID={$bibID}" target="_blank">
+  <a href="http://webservices-test.library.ucla.edu/aeon/index.jsp?bibID={$bibID}" target="_blank">
   <img src="ui/ucladb/images/Aeon-Request-material.jpg" alt="Select items from collection"/></a>
 </xsl:if>
 
 <xsl:if test="(. = 'sryr2') or (. = 'yrlspc') or (. = 'yrscacq') or (. = 'yrspalc') or (. = 'yrspald') or (. = 'yrspback') or (. = 'yrspbcbc') or (. = 'yrspbcbc*') or (. = 'yrspbelt') or (. = 'yrspbelt*')">
-  <a href="http://webservices.library.ucla.edu/aeon/index.jsp?bibID={$bibID}" target="_blank">
+  <a href="http://webservices-test.library.ucla.edu/aeon/index.jsp?bibID={$bibID}" target="_blank">
   <img src="ui/ucladb/images/Aeon-Request-material.jpg" alt="Select items from collection"/></a>
 </xsl:if>
 
 <xsl:if test="(. = 'yrspbooth') or (. = 'yrspboxm') or (. = 'yrspboxs') or (. = 'yrspbro') or (. = 'yrspcat') or (. = 'yrspcbc') or (. = 'yrspcoll') or (. = 'yrspdh') or (. = 'yrspeip') or (. = 'yrspeip*')">
-  <a href="http://webservices.library.ucla.edu/aeon/index.jsp?bibID={$bibID}" target="_blank">
+  <a href="http://webservices-test.library.ucla.edu/aeon/index.jsp?bibID={$bibID}" target="_blank">
   <img src="ui/ucladb/images/Aeon-Request-material.jpg" alt="Select items from collection"/></a>
 </xsl:if>
 
 <xsl:if test="(. = 'yrspeip**') or (. = 'yrspinc') or (. = 'yrspmin') or (. = 'yrspo*') or (. = 'yrspo**') or (. = 'yrspo***') or (. = 'yrsprpr') or (. = 'yrspsr') or (. = 'yrspstax') or (. = 'yrspvault') or (. = 'yrspcbc*') or (. = 'yrspsafe')">
-  <a href="http://webservices.library.ucla.edu/aeon/index.jsp?bibID={$bibID}" target="_blank">
+  <a href="http://webservices-test.library.ucla.edu/aeon/index.jsp?bibID={$bibID}" target="_blank">
   <img src="ui/ucladb/images/Aeon-Request-material.jpg" alt="Select items from collection"/></a>
 </xsl:if>
 
