@@ -420,7 +420,18 @@
                                              </div>
                                              </xsl:when>
                                              <xsl:otherwise>
-                                                <xsl:value-of select="page:status"/>
+                                                <!--xsl:value-of select="page:status"/-->
+                                                <xsl:choose>
+                                                  <xsl:when test="contains(page:status, 'Charged')">
+                                                    <xsl:text>Checked Out</xsl:text>
+                                                    <xsl:if test="string-length(page:status) &gt; 7">
+                                                      <xsl:value-of select="substring(page:status,8)"/>
+                                                    </xsl:if>
+                                                  </xsl:when>
+                                                  <xsl:otherwise>
+                                                    <xsl:value-of select="page:status"/>
+                                                  </xsl:otherwise>
+                                                </xsl:choose>
                                              </xsl:otherwise>
                                          </xsl:choose>
                                          &#160;

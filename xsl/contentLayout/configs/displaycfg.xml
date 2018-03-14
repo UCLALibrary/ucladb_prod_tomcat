@@ -436,6 +436,7 @@
         <displayTag field="246" indicator1="X" indicator2="X" subfield="abfghinp" />
         <displayTag field="700" indicator1="X" indicator2="X" subfield="abcdefghijklmnopqrstux" redirect="author" redirectOn="aq"/>
         <displayTag field="710" indicator1="X" indicator2="X" subfield="abcdefghiklmnoprstux" redirect="author" redirectOn="ab"/>
+        <displayTag field="711" indicator1="X" indicator2="X" subfield="acdefntj" redirect="author" redirectOn="ab"/>
     </displayTags>
 
 <displayTags label="Translation of:">
