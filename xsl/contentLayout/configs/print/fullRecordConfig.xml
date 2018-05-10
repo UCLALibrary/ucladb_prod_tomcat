@@ -201,7 +201,7 @@
         <displayTag field="599" indicator1="X" indicator2="X" subfield="a" />
     </displayTags>
     <displayTags label="Indexed In:">
-        <displayTag field="510" indicator1="X" indicator2="X" subfield="ab" />
+        <displayTag field="510" indicator1="X" indicator2="X" subfield="abc" />
     </displayTags>
     <displayTags label="Original Language:">
         <displayTag field="880" indicator1="X" indicator2="X" subfield="abc" />
