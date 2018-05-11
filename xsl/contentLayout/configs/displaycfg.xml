@@ -151,7 +151,7 @@
 <!--displayTag field="7107"/-->
 <displayTag field="300" indicator1="X" indicator2="X" subfield="abcdefg3"/>
 <!--displayTag field="351" indicator1="X" indicator2="X" subfield="abc3"/-->
-<displayTag field="344" indicator1="X" indicator2="X" subfield="abcdefgh3">
+<!--<displayTag field="344" indicator1="X" indicator2="X" subfield="abcdefgh3">
 <subfield value="b" preText=", "/>
 <subfield value="c" preText=", "/>
 <subfield value="d" preText=", "/>
@@ -168,7 +168,7 @@
 <subfield value="e" preText=", "/>
 <subfield value="f" preText=", "/>
 <subfield value="3" preText="(" postText=")"/>
-</displayTag>
+</displayTag>-->
 </displayTags>
 
     <displayTags label="ONLINE ACCESS:">
@@ -212,6 +212,24 @@
         <displayTag field="310" indicator1="X" indicator2="X" subfield="a"/>
         <displayTag field="515" indicator1="X" indicator2="X" subfield="a"/>
         <displayTag field="340" indicator1="X" indicator2="X" subfield="abcdefhi"/>
+<displayTag field="344" indicator1="X" indicator2="X" subfield="abcdefgh3">
+<subfield value="b" preText=", "/>
+<subfield value="c" preText=", "/>
+<subfield value="d" preText=", "/>
+<subfield value="e" preText=", "/>
+<subfield value="f" preText=", "/>
+<subfield value="g" preText=", "/>
+<subfield value="h" preText=", "/>
+<subfield value="3" preText="(" postText=")"/>
+</displayTag>
+<displayTag field="347" indicator1="X" indicator2="X" subfield="abcdef3">
+<subfield value="b" preText=", "/>
+<subfield value="c" preText=", "/>
+<subfield value="d" preText=", "/>
+<subfield value="e" preText=", "/>
+<subfield value="f" preText=", "/>
+<subfield value="3" preText="(" postText=")"/>
+</displayTag>
         <displayTag field="351" indicator1="X" indicator2="X" subfield="abc"/>
         <!--displayTag field="362" indicator1="X" indicator2="X" subfield="a"/-->
     </displayTags>
@@ -430,9 +448,9 @@
 <displayTag field="504" indicator1="X" indicator2="X" subfield="ab"/>
 <displayTag field="506" indicator1="X" indicator2="X" subfield="abcde"/>
 <displayTag field="518" indicator1="X" indicator2="X" subfield="adop3">
-  <subfield value="d" preText=", "/>
+  <!--<subfield value="d" preText=", "/>
   <subfield value="o" preText=", "/>
-  <subfield value="p" preText=", "/>
+  <subfield value="p" preText=", "/>-->
   <subfield value="3" preText="(" postText=")"/>
 </displayTag>
 <displayTag field="520" indicator1="X" indicator2="X" subfield="ab"/>
