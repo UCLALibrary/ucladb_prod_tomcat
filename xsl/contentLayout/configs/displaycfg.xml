@@ -151,24 +151,6 @@
 <!--displayTag field="7107"/-->
 <displayTag field="300" indicator1="X" indicator2="X" subfield="abcdefg3"/>
 <!--displayTag field="351" indicator1="X" indicator2="X" subfield="abc3"/-->
-<displayTag field="344" indicator1="X" indicator2="X" subfield="abcdefgh3">
-<subfield value="b" preText=", "/>
-<subfield value="c" preText=", "/>
-<subfield value="d" preText=", "/>
-<subfield value="e" preText=", "/>
-<subfield value="f" preText=", "/>
-<subfield value="g" preText=", "/>
-<subfield value="h" preText=", "/>
-<subfield value="3" preText="(" postText=")"/>
-</displayTag>
-<displayTag field="347" indicator1="X" indicator2="X" subfield="abcdef3">
-<subfield value="b" preText=", "/>
-<subfield value="c" preText=", "/>
-<subfield value="d" preText=", "/>
-<subfield value="e" preText=", "/>
-<subfield value="f" preText=", "/>
-<subfield value="3" preText="(" postText=")"/>
-</displayTag>
 </displayTags>
 
     <displayTags label="ONLINE ACCESS:">
@@ -250,11 +232,6 @@
     </displayTags>
 -->
 
-
-
-    <displayTags label="Performer(s):">
-        <displayTag field="511" indicator1="X" indicator2="X" subfield="a"/>
-    </displayTags>
 
     <displayTags label="Contents:">
         <displayTag field="2000"/>
@@ -429,12 +406,6 @@
 <displayTag field="502" indicator1="X" indicator2="X" subfield="a"/>
 <displayTag field="504" indicator1="X" indicator2="X" subfield="ab"/>
 <displayTag field="506" indicator1="X" indicator2="X" subfield="abcde"/>
-<displayTag field="518" indicator1="X" indicator2="X" subfield="adop3">
-  <subfield value="d" preText=", "/>
-  <subfield value="o" preText=", "/>
-  <subfield value="p" preText=", "/>
-  <subfield value="3" preText="(" postText=")"/>
-</displayTag>
 <displayTag field="520" indicator1="X" indicator2="X" subfield="ab"/>
 <displayTag field="521" indicator1="X" indicator2="X" subfield="a"/>
 <displayTag field="525" indicator1="X" indicator2="X" subfield="a"/>
