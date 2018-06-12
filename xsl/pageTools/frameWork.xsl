@@ -32,7 +32,7 @@
    <xsl:include href="../pageFacets/showXML.xsl"/>
 
    <!-- ## DEBUG ## -->
-   <xsl:variable name="debugEnabled" select="'false'"/>  <!-- ## set to 'true' to enable ## -->
+   <xsl:variable name="debugEnabled" select="'true'"/>  <!-- ## set to 'true' to enable ## -->
 
    <!-- ## Our Document Holders ## -->
    <xsl:variable name="pageXML" select="/"/>

@@ -420,7 +420,6 @@
                                              </div>
                                              </xsl:when>
                                              <xsl:otherwise>
-                                                <!--xsl:value-of select="page:status"/-->
                                                 <xsl:choose>
                                                   <xsl:when test="contains(page:status, 'Charged')">
                                                     <xsl:text>Checked Out</xsl:text>
