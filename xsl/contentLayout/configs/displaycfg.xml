@@ -428,8 +428,8 @@
 <displayTag field="502" indicator1="X" indicator2="X" subfield="a"/>
 <displayTag field="504" indicator1="X" indicator2="X" subfield="ab"/>
 <displayTag field="506" indicator1="X" indicator2="X" subfield="abcde"/>
-<displayTag field="518" indicator1="X" indicator2="X" subfield="adop3"/>
-<subfield value="3" preText="(" postText=")"/>
+<displayTag field="518" indicator1="X" indicator2="X" subfield="adop3">
+  <subfield value="3" preText="(" postText=")"/>
 </displayTag>
 <displayTag field="520" indicator1="X" indicator2="X" subfield="ab"/>
 <displayTag field="521" indicator1="X" indicator2="X" subfield="a"/>
