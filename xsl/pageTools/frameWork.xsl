@@ -131,8 +131,9 @@
                <script type="text/javascript" src="{$jscript-loc}highLight.js"/>
             </xsl:if>
 
-          <!-- 2014-01-29 akohler: LCAS survey javascript; must be after highLight.js -->
-          <!--script type="text/javascript" src="http://unitproj.library.ucla.edu/lis/libweb/libsurvey.js"/-->
+          <!-- 2018-07-18 akohler: WS-1347 - LCAS survey javascript; must be after highLight.js -->
+	  <!-- TODO: UPDATE DOMAIN TO WWW AFTER PRODUCTION DEPLOYMENT -->
+          <script type="text/javascript" src="//www-test.library.ucla.edu/sites/all/themes/uclalib_omega/js/libsurvey.js"/>
           <!-- ## Firebug Lite for IE Debugging -->
           <!--
           <script type="text/javascript" src="http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js"></script>
