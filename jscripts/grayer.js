@@ -35,10 +35,10 @@ function grayer()
 		case 4:
 		case 5:
 		case 14:
-			if (frm.limitTo.disabled == true) 
+			if (frm.setLimit.disabled == true) 
 			{
-				frm.limitTo.selectedIndex = qlimit;
-				frm.limitTo.disabled = false;
+				frm.setLimit.selectedIndex = qlimit;
+				frm.setLimit.disabled = false;
 			}
 			break;
 		case 6:
@@ -49,12 +49,12 @@ function grayer()
 		case 11:
 		case 12:
 		case 13:
-			if (frm.limitTo.disabled == false) 
+			if (frm.setLimit.disabled == false) 
 			{
-				qlimit = frm.limitTo.selectedIndex;
-				frm.limitTo.disabled = true;
+				qlimit = frm.setLimit.selectedIndex;
+				frm.setLimit.disabled = true;
 			}
-			frm.limitTo.selectedIndex = 0; // so it shows limit of None
+			frm.setLimit.selectedIndex = 0; // so it shows limit of All Material
 			break;
 	}
 }
