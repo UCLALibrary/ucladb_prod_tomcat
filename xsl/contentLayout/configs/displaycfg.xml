@@ -212,7 +212,7 @@
           <subfield value="f" preText=" | "/>
           <subfield value="3" preText="(" postText=")"/>
         </displayTag>
-        <displayTag field="351" indicator1="X" indicator2="X" subfield="abc"/>
+        <displayTag field="351" indicator1="X" indicator2="X" subfield="abc3"/>
         <!--displayTag field="362" indicator1="X" indicator2="X" subfield="a"/-->
     </displayTags>
 
