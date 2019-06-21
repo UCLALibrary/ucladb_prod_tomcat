@@ -401,7 +401,7 @@
 
                                     <td class="tableCell" headers="cellChargedItem"><xsl:value-of select="page:title"/>&#160;
 <xsl:if test="page:itemType='ILL'">
-<br/><strong>To renew ILL items, click <a href="https://ucill.vdxhost.com/zportal/" target="_blank">here</a></strong>
+<br/><strong>ILL books are non-renewable.  Email <a href="mailto:yrl-ill-b@library.ucla.edu">ILL</a> for questions.</strong>
 </xsl:if>
                                     </td>
                                     <td class="tableCell" headers="cellChargedType"><xsl:value-of select="page:itemType"/>&#160;
