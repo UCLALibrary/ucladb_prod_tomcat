@@ -131,9 +131,6 @@
                <script type="text/javascript" src="{$jscript-loc}highLight.js"/>
             </xsl:if>
 
-          <!-- 2018-07-18 akohler: WS-1347 - LCAS survey javascript; must be after highLight.js -->
-	  <!-- TODO: UPDATE DOMAIN TO WWW AFTER PRODUCTION DEPLOYMENT -->
-          <script type="text/javascript" src="//gitcdn.link/repo/UCLALibrary/unitproj/master/lis/libweb/libsurvey.js"/>
           <!-- ## Firebug Lite for IE Debugging -->
           <!--
           <script type="text/javascript" src="http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js"></script>
