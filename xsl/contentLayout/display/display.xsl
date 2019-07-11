@@ -1176,6 +1176,7 @@
 <xsl:for-each select="$HoldXML/mfhd:mfhdRecord[@mfhdId = $mfhdID]/mfhd:mfhdData[@name='locationCode']">
 	<xsl:if test="string-length(.)">
 
+<!-- start of LSC links -->
 <xsl:if test="(. = 'arsc') or (. = 'arscrr') or (. = 'arscsr') or (. = 'musc') or (. = 'musc*') or (. = 'musc**') or (. = 'musc***') or (. = 'muscarch') or (. = 'muscfacs') or (. = 'muscfolio')">
   <a href="http://webservices-test.library.ucla.edu/aeon/index.jsp?bibID={$bibID}" target="_blank">
   <img src="ui/ucladb/images/Aeon-Request-material.jpg" alt="Select items from collection"/></a>
@@ -1215,6 +1216,19 @@
   <a href="http://webservices-test.library.ucla.edu/aeon/index.jsp?bibID={$bibID}" target="_blank">
   <img src="ui/ucladb/images/Aeon-Request-material.jpg" alt="Select items from collection"/></a>
 </xsl:if>
+<!-- end of LSC links -->
+
+<!-- start of Clark links -->
+<xsl:if test="(. = 'ck') or (. = 'ckacq') or (. = 'ckcat') or (. = 'ckpress') or (. = 'ckrf') or (. = 'cksr')">
+  <a href="http://webservices-test.library.ucla.edu/aeon/clarklinker?bibID={$bibID}&amp;mfhdID={$mfhdID}" target="_blank">
+  <img src="ui/ucladb/images/Aeon-Request-material.jpg" alt="Select items from collection"/></a>
+</xsl:if>
+
+<xsl:if test="(. = 'srck') or (. = 'ckrr') or (. = 'ckmt') or (. = 'ckmap') or (. = 'ckmi') or (. = 'ckcage')">
+  <a href="http://webservices-test.library.ucla.edu/aeon/clarklinker?bibID={$bibID}&amp;mfhdID={$mfhdID}" target="_blank">
+  <img src="ui/ucladb/images/Aeon-Request-material.jpg" alt="Select items from collection"/></a>
+</xsl:if>
+<!-- end of Clark links -->
 
 </xsl:if>
 </xsl:for-each>
