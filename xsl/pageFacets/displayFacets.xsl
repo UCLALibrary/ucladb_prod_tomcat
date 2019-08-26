@@ -76,9 +76,28 @@
                             <xsl:variable name="message">
                                    <xsl:value-of select="page:linkMessage"/>
                             </xsl:variable>
+
+<xsl:variable name="text">
+<xsl:value-of select="page:linkText"/>
+</xsl:variable>
+
                             <xsl:choose>
                                 <xsl:when test="string-length($message)">
-                                    <li title="{$message}"><span class="recordLinkBullet">·</span><a href="{page:URL}"><span><xsl:value-of select="page:linkText"/></span></a><br/><span class="fieldSubText"><xsl:value-of select="page:postText"/></span></li>
+
+<xsl:choose>
+<xsl:when test="contains($text,'Request')">
+<li title="{$message}"><span class="recordLinkBullet">&#183;</span><a href="{page:URL}"><span>Recall checked-out item</span></a></li>
+<li title="{$message}"><span class="recordLinkBullet">&#183;</span><a href="{page:URL}"><span>Request from SRLF</span></a></li>
+<li title="{$message}"><span class="recordLinkBullet">&#183;</span><a href="{page:URL}"><span>Request for purchase</span></a></li>
+<li title="{$message}"><span class="recordLinkBullet">&#183;</span><a href="{page:URL}"><span>Request if status is IN PROCESS/ON ORDER</span></a></li>
+<li title="{$message}"><span class="recordLinkBullet">&#183;</span><a href="{page:URL}"><span>Request for fee</span></a><br/><span class="fieldSubText">(See <a href="https://www.library.ucla.edu/use/borrow-renew-return/interlibrary-loan-document-delivery/document-delivery" target="_blank">Document Delivery Service</a>)</span></li>
+</xsl:when>
+<xsl:otherwise>
+<li title="{$message}"><span class="recordLinkBullet">&#183;</span><a href="{page:URL}"><span><xsl:value-of select="page:linkText"/></span></a><br/><span class="fieldSubText"><xsl:value-of select="page:postText"/></span></li>
+</xsl:otherwise>
+</xsl:choose>
+
+                                    <!--li title="{$message}"><span class="recordLinkBullet">·</span><a href="{page:URL}"><span><xsl:value-of select="page:linkText"/></span></a><br/><span class="fieldSubText"><xsl:value-of select="page:postText"/></span></li-->
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <li><span class="recordLinkBullet">·</span><a href="{page:URL}"><span><xsl:value-of select="page:linkText"/></span></a><br/><span class="fieldSubText"><xsl:value-of select="page:postText"/></span></li>
