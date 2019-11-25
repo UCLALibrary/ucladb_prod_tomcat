@@ -86,7 +86,8 @@
 
 <xsl:variable name="bibFormats" select="$Configs/pageConfigs/bibFormats"/>
 
-<xsl:variable name="browse" select="'%2B'"/>
+<!--  use the '+' instead of '%2B' to avoid double URL encoding -->
+<xsl:variable name="browse" select="'+'"/>
 
 <!-- ## Definition of URN and DOI link from webvoyage.properties file the default is a blank string ## -->
 <xsl:variable name="doiLink">

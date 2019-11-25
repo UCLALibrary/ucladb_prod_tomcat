@@ -472,6 +472,7 @@ New Book Alerts via RSS: Try <a href="http://www.library.ucla.edu/search/new-boo
          <br/>You have more than the maximum allowed demerits for consortial borrowing.
       </pageMsg>
       <pageMsg errorCode="searchResults.noHits">Search resulted in no hits.</pageMsg>
+	  <pageMsg errorCode="searchResults.truncated">Search results were truncated.</pageMsg>
    </pageMessages>
 
 
