@@ -117,6 +117,12 @@
                             </xsl:variable>
                             <!-- ## link & text ## -->
                             <!-- ## Loop thru the content lines ## -->
+                            <!-- If there is a heading - output it first with link to title -->
+                            <xsl:if test="page:element[@nameId='page.searchResults.contents.heading']/page:linkText">
+                                   <a href="{$linkURL}">
+                                        <xsl:value-of select="page:element[@nameId='page.searchResults.contents.heading']/page:linkText"/>
+                                   </a>
+                            </xsl:if>
                             <xsl:for-each select="page:element[contains(@nameId,'page.searchResults.contents.line')]">
                                 <div class="line{position()}Link">
                                     <!-- ## Special handling of the 5th line ## -->
