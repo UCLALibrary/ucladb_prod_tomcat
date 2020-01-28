@@ -452,6 +452,14 @@
 <displayTag field="594" indicator1="X" indicator2="X" subfield="a"/>
 </displayTags>
 
+<displayTags label="Citation Information:">
+<displayTag field="524" indicator1="X" indicator2="X" subfield="a"/>
+</displayTags>
+
+<displayTags label="Source of Acquisition:">
+<displayTag field="541" indicator1="X" indicator2="X" subfield="acd"/>
+</displayTags>
+
     <displayTags label="References:">
         <displayTag field="510" indicator1="3" indicator2="X" subfield="abcu" />
         <displayTag field="510" indicator1="4" indicator2="X" subfield="abcu" />
