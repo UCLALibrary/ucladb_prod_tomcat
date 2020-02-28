@@ -106,6 +106,16 @@
 <xsl:param name="mfhdID"/>
 <xsl:param name="recordType"/>
 
+	<!-- VBT-569: Display custom info when record not found via direct link. -->
+	<xsl:if test="not($bibID)">
+	    <p>Sorry, record not found.  Here are some other options:</p>
+		<ul>
+		    <li>Search the <a href="https://catalog.library.ucla.edu/">Catalog</a></li>
+		    <li>Ask for assistance at a service desk</li>
+		    <li>Ask a <a href="https://www.library.ucla.edu/support/research-help">librarian</a></li>
+		</ul>
+	</xsl:if>
+
     <xsl:choose>
         <xsl:when test="$recordType='bib'">
             <!-- ## Bibliographic Title ## -->
