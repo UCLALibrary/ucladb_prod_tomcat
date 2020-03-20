@@ -238,6 +238,12 @@ _gaq.push(['_trackPageview']);
                   <xsl:call-template name="displayPageMessages"/>
 
 <div id="dtrMixingContent">
+<div>
+Update: 3/19/20 - All UCLA Library locations are closed and OPAC services are suspended until further notice.  
+We invite you to visit <a href="https://www.library.ucla.edu/" target="_blank">library.ucla.edu</a> for
+access to remote services.
+</div>
+<br/>
                   <div id="pageHeadingTitle">
                      <xsl:call-template name="buildPageHeading">
                         <xsl:with-param name="nameId" select="'page.heading'"/>
