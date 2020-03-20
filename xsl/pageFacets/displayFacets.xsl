@@ -86,11 +86,12 @@
 
 <xsl:choose>
 <xsl:when test="contains($text,'Request')">
-<li title="{$message}"><span class="recordLinkBullet">&#183;</span><a href="{page:URL}"><span>Recall checked-out item</span></a></li>
+<li title="{$message}"><span class="recordLinkBullet">&#183;</span><span>The UCLA Library is closed until further notice due to COVID-19. Request and recall functions are temporarily disabled until normal operations resume.</span></li>
+<!--li title="{$message}"><span class="recordLinkBullet">&#183;</span><a href="{page:URL}"><span>Recall checked-out item</span></a></li>
 <li title="{$message}"><span class="recordLinkBullet">&#183;</span><a href="{page:URL}"><span>Request from SRLF</span></a></li>
 <li title="{$message}"><span class="recordLinkBullet">&#183;</span><a href="{page:URL}"><span>Request for purchase</span></a></li>
 <li title="{$message}"><span class="recordLinkBullet">&#183;</span><a href="{page:URL}"><span>Request if status is IN PROCESS/ON ORDER</span></a></li>
-<li title="{$message}"><span class="recordLinkBullet">&#183;</span><a href="{page:URL}"><span>Request for fee</span></a><br/><span class="fieldSubText">(See <a href="https://www.library.ucla.edu/use/borrow-renew-return/interlibrary-loan-document-delivery/document-delivery" target="_blank">Document Delivery Service</a>)</span></li>
+<li title="{$message}"><span class="recordLinkBullet">&#183;</span><a href="{page:URL}"><span>Request for fee</span></a><br/><span class="fieldSubText">(See <a href="https://www.library.ucla.edu/use/borrow-renew-return/interlibrary-loan-document-delivery/document-delivery" target="_blank">Document Delivery Service</a>)</span></li-->
 </xsl:when>
 <xsl:otherwise>
 <li title="{$message}"><span class="recordLinkBullet">&#183;</span><a href="{page:URL}"><span><xsl:value-of select="page:linkText"/></span></a><br/><span class="fieldSubText"><xsl:value-of select="page:postText"/></span></li>
