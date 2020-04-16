@@ -239,9 +239,7 @@ _gaq.push(['_trackPageview']);
 
 <div id="dtrMixingContent">
 <div>
-Update: 3/19/20 - All UCLA Library locations are closed and Library Catalog services such as Requests and Recalls are suspended until further notice.  
-We invite you to visit <a href="https://www.library.ucla.edu/" target="_blank">library.ucla.edu</a> for
-access to remote services.
+UCLA Library staff are working remotely to provide expert help and online services to advance remote teaching and learning. All Library buildings are closed and Library Catalog services such as Requests and Recalls are suspended until further notice. <a href="https://www.library.ucla.edu/remote" target="_blank">DISCOVER REMOTE LEARNING TOOLS</a>.
 </div>
 <br/>
                   <div id="pageHeadingTitle">
