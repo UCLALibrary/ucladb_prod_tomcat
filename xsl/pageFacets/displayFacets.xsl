@@ -26,6 +26,7 @@
     xmlns:slim="http://www.loc.gov/MARC21/slim">
 
 <xsl:include href="../local_googleBooksAvail.xsl"/>
+<xsl:include href="../local_hathiTrustAvail.xsl"/>
 
 <!-- ###################################################################### -->
 
@@ -137,10 +138,18 @@
                 </div>
 
 
-            <!-- ## mdp add the google book template ## -->
-            <div id="googleBooksRow">
-               <xsl:call-template name="googleBooksAvail"/>
-             </div>
+			 <!-- Add Hathi Trust template -->
+			 <div style="display:none;" id="fulltext_label">
+			   <label>Read online</label>
+    			 <div id="hathiRow">
+	    		   <xsl:call-template name="hathiTrustAvail"/>
+		    	 </div>
+                <!-- ## mdp add the google book template ## -->
+                <div id="googleBooksRow">
+                   <xsl:call-template name="googleBooksAvail"/>
+                 </div>
+			 </div> 
+
 
             </xsl:for-each>
             <!--/ul-->
