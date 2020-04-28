@@ -161,7 +161,7 @@
         <displayTag field="9000"/>
     </displayTags>
 
-    <displayTags label="Individual Records:">
+    <displayTags label="Selected records in this series:">
         <displayTag field="3500" profileMatch="ISSNANAL"/>
         <displayTag field="3500" profileMatch="ISSNCOMP"/>
         <displayTag field="3500" profileMatch="ISSNPAR2"/>
