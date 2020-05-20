@@ -106,6 +106,7 @@
           <script type="text/javascript" src="{$jscript-loc}ajaxUtils.js"/>
           <script type="text/javascript" src="{$jscript-loc}grayer.js"/>
           <script type="text/javascript" src="{$jscript-loc}setRangeRadio.js"/>
+		  <script type="text/javascript" src="{$jscript-loc}normalizeCharacters.js"/>
 
             <!-- ################################### -->
             <!-- ## WebVoyage Javascript Includes ## -->

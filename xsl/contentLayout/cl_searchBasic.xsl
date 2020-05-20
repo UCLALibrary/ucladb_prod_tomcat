@@ -37,10 +37,12 @@
             <xsl:with-param name="eleName"  select="'searchArg'"/>
             <xsl:with-param name="size"  select="'51'"/>
             <xsl:with-param name="accesskey"  select="'s'"/>
+			 <xsl:with-param name="onSubmitCallJSFunction"  select="'normalizeCharacters();'"/>
          </xsl:call-template>
          <xsl:call-template name="buildFormDropDown">
             <xsl:with-param name="eleName"  select="'searchCode'"/>
             <xsl:with-param name="onChangeCallJSFunction" select="'grayer();'"/>
+
          </xsl:call-template>
 <div id="searchTip" class="searchTip">africa? finds africa, african, ...</div>
       </div>
