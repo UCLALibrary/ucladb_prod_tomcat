@@ -151,11 +151,12 @@
 <!-- ##################################################################################################################### -->
 
 <xsl:template name="quickSearchBar">
+<xsl:param name="onSubmitCallJSFunction"/>
 
    <xsl:for-each select="/page:page/page:searchQuick">
 <xsl:comment>this is quickSearchBar in xsl/pageFacets/header.xsl</xsl:comment>
       <div id="quickSearchBar" title="{$headerText/quickSearchBar}">
-         <form action="{page:element[@nameId='page.searchQuick.go.button']/page:buttonAction}" method="get">
+         <form action="{page:element[@nameId='page.searchQuick.go.button']/page:buttonAction}" method="get" onsubmit="{$onSubmitCallJSFunction}">
          
             <span id="quickSearchArg" title="{/page:page//page:element[@nameId='searchArg']/page:label}">
                <xsl:call-template name="buildFormInput">

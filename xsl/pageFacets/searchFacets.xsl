@@ -56,13 +56,6 @@
       </form>
    </div>
 
-<xsl:choose>
-<xsl:when test="string-length($onSubmitCallJSFunction)">
-<xsl:attribute name="onsubmit"><xsl:value-of select="$onSubmitCallJSFunction"/></xsl:attribute>
-</xsl:when>
-<xsl:otherwise></xsl:otherwise>
-</xsl:choose>
-
 </xsl:template>
 
 <!-- ######################## -->
