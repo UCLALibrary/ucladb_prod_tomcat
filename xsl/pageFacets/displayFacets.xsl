@@ -87,7 +87,7 @@
 
 <xsl:choose>
 <xsl:when test="contains($text,'Request')">
-li title="{$message}"><span class="recordLinkBullet">&#183;</span><span>Request and recall functions are temporarily disabled until further notice due to COVID-19.</span></li>
+<li title="{$message}"><span class="recordLinkBullet">&#183;</span><span>Request and recall functions are temporarily disabled until further notice due to COVID-19.</span></li>
 <!--li title="{$message}"><span class="recordLinkBullet">&#183;</span><a href="{page:URL}"><span>Recall checked-out item</span></a></li>
 <li title="{$message}"><span class="recordLinkBullet">&#183;</span><a href="{page:URL}"><span>Request from SRLF</span></a></li>
 <li title="{$message}"><span class="recordLinkBullet">&#183;</span><a href="{page:URL}"><span>Request for purchase</span></a></li>
