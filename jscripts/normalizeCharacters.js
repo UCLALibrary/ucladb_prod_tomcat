@@ -1,9 +1,11 @@
 function normalizeCharacters()
 	{
+		// Find searcArg and replace smart quote with single quote 
 		var search = document.getElementById("searchArg").value;
 		search = search.replace("\u2019", "'");
 		document.getElementById("searchArg").value = search;
 		
+		//Advanced search box has three searchArgs
 		var search1 = document.getElementById("searchArg1").value;
 		search1 = search1.replace("\u2019", "'");
 		document.getElementById("searchArg1").value = search1;
@@ -15,6 +17,5 @@ function normalizeCharacters()
 		var search3 = document.getElementById("searchArg3").value;
 		search3 = search3.replace("\u2019", "'");
 		document.getElementById("searchArg3").value = search3;
-
 	}
 

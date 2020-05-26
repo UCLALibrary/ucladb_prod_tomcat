@@ -51,7 +51,6 @@
 			<xsl:with-param name="accesskey" select="$accesskey"/>
 			<xsl:with-param name="cssClass"  select="$cssClass"/>
 			<xsl:with-param name="onChangeCallJSFunction"  select="$onChangeCallJSFunction"/>
-	
 		</xsl:call-template>
 
 		<xsl:call-template	name="doMessages">
@@ -87,7 +86,6 @@
 			<xsl:with-param name="cols"       select="$cols"/>
 			<xsl:with-param name="accesskey"  select="$accesskey"/>
 			<xsl:with-param name="cssClass"   select="$cssClass"/>
-			
 		</xsl:call-template>
 
 		<xsl:call-template	name="doMessages">
@@ -214,18 +212,6 @@
 </xsl:when>
 <xsl:otherwise></xsl:otherwise>
 </xsl:choose>
-
-
-
-
-
-
-
-
-
-
-
-
 
       <!-- ## Type ## -->
       <xsl:attribute name="type">
