@@ -35,8 +35,6 @@
    <xsl:param name="reqField"/>
    <xsl:param name="defaultLabelText"/>
    <xsl:param name="onChangeCallJSFunction"/>
-   <xsl:param name="onSubmitCallJSFunction"/>
-  
 
       <xsl:call-template	name="diplayLabel">
 			<xsl:with-param name="eleName" select="$eleName"/>
@@ -53,7 +51,7 @@
 			<xsl:with-param name="accesskey" select="$accesskey"/>
 			<xsl:with-param name="cssClass"  select="$cssClass"/>
 			<xsl:with-param name="onChangeCallJSFunction"  select="$onChangeCallJSFunction"/>
-			<xsl:with-param name="onSubmitCallJSFunction"  select="$onSubmitCallJSFunction"/>
+	
 		</xsl:call-template>
 
 		<xsl:call-template	name="doMessages">
@@ -162,7 +160,6 @@
 <xsl:param name="cssClass"/>  <!-- ## pass in a cascading stylesheet class ## -->
 <xsl:param name="disabled"/>  <!-- ## pass if the input is to be diabled ## -->
 <xsl:param name="onChangeCallJSFunction"/>
-<xsl:param name="onSubmitCallJSFunction"/>
 
 <xsl:variable name="eleID">
    <xsl:choose>
@@ -218,12 +215,12 @@
 <xsl:otherwise></xsl:otherwise>
 </xsl:choose>
 
-<xsl:choose>
-<xsl:when test="string-length($onSubmitCallJSFunction)">
-<xsl:attribute name="onsubmit"><xsl:value-of select="$onSubmitCallJSFunction"/></xsl:attribute>
-</xsl:when>
-<xsl:otherwise></xsl:otherwise>
-</xsl:choose>
+
+
+
+
+
+
 
 
 
