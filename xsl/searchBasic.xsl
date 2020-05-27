@@ -64,6 +64,7 @@
 		<xsl:with-param name="formName" select="'searchBasic'"/>
 		<xsl:with-param name="formData" select="$formData"/>
 		<xsl:with-param name="selectedTab" select="'page.search.buttons.basic.button'"/>
+		<xsl:with-param name="onSubmitCallJSFunction" select="'normalizeCharacters();'"/>
 	</xsl:call-template>
 
 </xsl:template>

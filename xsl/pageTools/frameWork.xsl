@@ -106,6 +106,7 @@
           <script type="text/javascript" src="{$jscript-loc}ajaxUtils.js"/>
           <script type="text/javascript" src="{$jscript-loc}grayer.js"/>
           <script type="text/javascript" src="{$jscript-loc}setRangeRadio.js"/>
+		  <script type="text/javascript" src="{$jscript-loc}normalizeCharacters.js"/>
 
             <!-- ################################### -->
             <!-- ## WebVoyage Javascript Includes ## -->
@@ -168,81 +169,82 @@
             <!-- These stylesheets are used on nearly everypage , so define them here to make them global -->
          <link href="{$css-loc}frameWork.css"      media="all" type="text/css" rel="stylesheet"/>
          <link href="{$css-loc}header.css"         media="all" type="text/css" rel="stylesheet"/>
-         <link href="{$css-loc}quickSearchBar.css" media="all" type="text/css" rel="stylesheet"/>
-         <link href="{$css-loc}pageProperties.css" media="all" type="text/css" rel="stylesheet"/>
+ <link href="{$css-loc}quickSearchBar.css" media="all" type="text/css" rel="stylesheet"/>
+ <link href="{$css-loc}pageProperties.css" media="all" type="text/css" rel="stylesheet"/>
 
-            <xsl:if test="$debugEnabled='true'">
-               <!-- We only need these if we are in debug mode, for the Show XML Window -->
-               <link href="{$css-loc}window.css"    media="all" type="text/css" rel="stylesheet"/>
-               <link href="{$css-loc}alphacube.css" media="all" type="text/css" rel="stylesheet"/>
-               <link href="{$css-loc}showXML.css"   media="all" type="text/css" rel="stylesheet"/>
-          </xsl:if>
+	<xsl:if test="$debugEnabled='true'">
+	   <!-- We only need these if we are in debug mode, for the Show XML Window -->
+	   <link href="{$css-loc}window.css"    media="all" type="text/css" rel="stylesheet"/>
+	   <link href="{$css-loc}alphacube.css" media="all" type="text/css" rel="stylesheet"/>
+	   <link href="{$css-loc}showXML.css"   media="all" type="text/css" rel="stylesheet"/>
+  </xsl:if>
 
-         <!--
-         ## any stylesheets that are specific to a single page should be passed
-         ## in otherwise the the stylesheet is global to all pages
-         -->
-         <xsl:copy-of select="$myCSS"/>
-         <link href="{$css-loc}ucla_style.css"      media="all" type="text/css" rel="stylesheet"/>
+ <!--
+ ## any stylesheets that are specific to a single page should be passed
+ ## in otherwise the the stylesheet is global to all pages
+ -->
+ <xsl:copy-of select="$myCSS"/>
+ <link href="{$css-loc}ucla_style.css"      media="all" type="text/css" rel="stylesheet"/>
 
 
-         <xsl:text disable-output-escaping = "yes">&lt;!--[if lt IE 8]&gt;</xsl:text>
-            <link href="{$css-loc}ieFixes.css"   media="all" type="text/css" rel="stylesheet"/>
-         <xsl:text disable-output-escaping = "yes">&lt;![endif]--&gt;</xsl:text>
-         <xsl:text disable-output-escaping = "yes">&lt;!--[if IE 7]&gt;</xsl:text>
-            <link href="{$css-loc}ie7Fixes.css"   media="all" type="text/css" rel="stylesheet"/>
-         <xsl:text disable-output-escaping = "yes">&lt;![endif]--&gt;</xsl:text>
-         <xsl:text disable-output-escaping = "yes">&lt;!--[if gt IE 7]&gt;</xsl:text>
-            <link href="{$css-loc}ie8Fixes.css"   media="all" type="text/css" rel="stylesheet"/>
-         <xsl:text disable-output-escaping = "yes">&lt;![endif]--&gt;</xsl:text>
+ <xsl:text disable-output-escaping = "yes">&lt;!--[if lt IE 8]&gt;</xsl:text>
+	<link href="{$css-loc}ieFixes.css"   media="all" type="text/css" rel="stylesheet"/>
+ <xsl:text disable-output-escaping = "yes">&lt;![endif]--&gt;</xsl:text>
+ <xsl:text disable-output-escaping = "yes">&lt;!--[if IE 7]&gt;</xsl:text>
+	<link href="{$css-loc}ie7Fixes.css"   media="all" type="text/css" rel="stylesheet"/>
+ <xsl:text disable-output-escaping = "yes">&lt;![endif]--&gt;</xsl:text>
+ <xsl:text disable-output-escaping = "yes">&lt;!--[if gt IE 7]&gt;</xsl:text>
+	<link href="{$css-loc}ie8Fixes.css"   media="all" type="text/css" rel="stylesheet"/>
+ <xsl:text disable-output-escaping = "yes">&lt;![endif]--&gt;</xsl:text>
 
-        </head>
+</head>
 
-    <xsl:variable name="timeout" select="/page:page/page:pageHeader/page:element[@nameId='timeout.time']/page:value"/>
-    <xsl:variable name="grace" select="/page:page/page:pageHeader/page:element[@nameId='timeout.grace']/page:value"/>
-    <xsl:variable name="timeoutMessage">
-        <xsl:for-each select="$Configs/pageConfigs/jsmessage[@nameId='timeOutMessage']">
-            <xsl:value-of select="preText"/><xsl:value-of select="$grace"/><xsl:value-of select="postText"/>
-        </xsl:for-each>
-    </xsl:variable>
+<xsl:variable name="timeout" select="/page:page/page:pageHeader/page:element[@nameId='timeout.time']/page:value"/>
+<xsl:variable name="grace" select="/page:page/page:pageHeader/page:element[@nameId='timeout.grace']/page:value"/>
+<xsl:variable name="timeoutMessage">
+<xsl:for-each select="$Configs/pageConfigs/jsmessage[@nameId='timeOutMessage']">
+	<xsl:value-of select="preText"/><xsl:value-of select="$grace"/><xsl:value-of select="postText"/>
+</xsl:for-each>
+</xsl:variable>
 
-      <!-- ## Html Body Section of the Page ## -->
-      <body class="frameWorkUI" onLoad="setFocus('{/page:page/@nameId}'){$highlightNodes};grayer();timedMsg({$timeout}, {$grace}, '{$timeoutMessage}')">
-           <div id="pageContainer">
+<!-- ## Html Body Section of the Page ## -->
+<body class="frameWorkUI" onLoad="setFocus('{/page:page/@nameId}'){$highlightNodes};grayer();timedMsg({$timeout}, {$grace}, '{$timeoutMessage}')">
+   <div id="pageContainer">
 
-              <!-- ## access Keys ## -->
-             <a href="#mainContentLink"  accesskey="1"></a>    <!-- provide access to the main content on the page. -->
-             <a href="#searchnavbar" accesskey="2"></a>    <!-- provide access to the search function on the page. -->
-             <a href="#mainNav"      accesskey="3"></a>    <!-- provide access to the main menu on the page. -->
+	  <!-- ## access Keys ## -->
+	 <a href="#mainContentLink"  accesskey="1"></a>    <!-- provide access to the main content on the page. -->
+	 <a href="#searchnavbar" accesskey="2"></a>    <!-- provide access to the search function on the page. -->
+	 <a href="#mainNav"      accesskey="3"></a>    <!-- provide access to the main menu on the page. -->
 
-             <!-- This is the Header -->
-            <div id="pageHeader">
-               <xsl:call-template name="buildHeader"/>
-            </div>
+	 <!-- This is the Header -->
+	<div id="pageHeader">
+	   <xsl:call-template name="buildHeader"/>
+	</div>
 
 <xsl:comment>this is calling quickSearchBar in xsl/pageTools/frameWork.xsl</xsl:comment>
-               <!--xsl:call-template name="quickSearchBar"/-->
+	 <!--xsl:call-template name="quickSearchBar"/--> 
 
-               <!-- This is the main page content -->
-               <div id="mainContent">
-                  <a name="mainContentLink"></a>               <!-- This will help screen readers skip the header -->
+	   <!-- This is the main page content -->
+	   <div id="mainContent">
+		  <a name="mainContentLink"></a>               <!-- This will help screen readers skip the header -->
 
-                  <!-- ## Display blockCode errorCode etc  messages ## -->
-                  <xsl:call-template name="displayPageMessages"/>
+		  <!-- ## Display blockCode errorCode etc  messages ## -->
+		  <xsl:call-template name="displayPageMessages"/>
 
 <div id="dtrMixingContent">
 <div>
 UCLA Library staff are working remotely to provide expert help and online services to advance remote teaching and learning. All Library buildings are closed and Library Catalog services such as Requests and Recalls are suspended until further notice. <a href="https://www.library.ucla.edu/remote" target="_blank">DISCOVER REMOTE LEARNING TOOLS</a>.
 </div>
 <br/>
-                  <div id="pageHeadingTitle">
-                     <xsl:call-template name="buildPageHeading">
-                        <xsl:with-param name="nameId" select="'page.heading'"/>
-                     </xsl:call-template>
-                  </div>
-<xsl:call-template name="quickSearchBar"/>
-</div>
-
+		  <div id="pageHeadingTitle">
+			 <xsl:call-template name="buildPageHeading">
+				<xsl:with-param name="nameId" select="'page.heading'"/>
+			 </xsl:call-template>
+		  </div>
+	<xsl:call-template name="quickSearchBar">
+		<xsl:with-param name="onSubmitCallJSFunction" select="'normalizeCharacters();'"/>
+	</xsl:call-template>
+</div>	
                   <!-- ## This will be displayed for users who have javascript disabled ## -->
                   <noscript>
                       <h2 class="accessibilityHeader">

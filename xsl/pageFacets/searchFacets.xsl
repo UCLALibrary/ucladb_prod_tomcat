@@ -34,7 +34,7 @@
 <xsl:param name="formName"/>
 <xsl:param name="formData"/>
 <xsl:param name="selectedTab"/>
-
+<xsl:param name="onSubmitCallJSFunction"/>
 
     <xsl:call-template name="buildDatabaseInfo">
         <xsl:with-param name="databaseEleName"  select="'page.search.database.label'"/>
@@ -51,7 +51,7 @@
     </xsl:call-template>
 
     <div id="searchForm">
-      <form action="{$formAction}" method="GET" accept-charset="UTF-8" id="{$formName}">
+      <form action="{$formAction}" method="GET" accept-charset="UTF-8" id="{$formName}" onsubmit="{$onSubmitCallJSFunction}">
          <xsl:copy-of select="$formData"/>
       </form>
    </div>
