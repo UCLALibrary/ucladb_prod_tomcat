@@ -1,5 +1,6 @@
 function linkETAS() {
   getBibIds();
+  //demoService();
 }
 
 function getBibIds () {
@@ -10,5 +11,11 @@ function getBibIds () {
     ids = bib_ids[0].value.slice(0, -1);
 	alert(ids);
   }
+}
+
+function demoService () {
+  fetch('https://jsonplaceholder.typicode.com/todos/1')
+    .then(response => response.json())
+    .then(json => alert(json))
 }
 

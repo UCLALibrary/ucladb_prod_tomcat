@@ -58,6 +58,10 @@
 
             <!-- ## result record ## -->
             <div class="{$classPosition}">
+			    <!-- Capture bib id for later use -->
+				<xsl:variable name="bibId">
+				    <xsl:value-of select="page:value"/>
+				</xsl:variable>
                 <xsl:if test="$buttonCount > 0">
                     <xsl:variable name="checkBoxId">
                         <xsl:value-of select="page:value"/>
@@ -164,7 +168,7 @@
                                                       <xsl:value-of select="page:label"/>
                                                     </xsl:otherwise>
                                                   </xsl:choose>
-                                                <b>&#160;ETAS Placeholder</b>
+                                                <div id="etas_{$bibId}"><b>&#160;ETAS Placeholder</b></div>
                                                 </xsl:when>
                                                 <xsl:otherwise>
                                                   <xsl:if test="string-length(page:label) or string-length(page:value)">
