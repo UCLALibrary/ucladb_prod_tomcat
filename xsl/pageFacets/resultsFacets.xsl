@@ -164,6 +164,7 @@
                                                       <xsl:value-of select="page:label"/>
                                                     </xsl:otherwise>
                                                   </xsl:choose>
+                                                <b>&#160;ETAS Placeholder</b>
                                                 </xsl:when>
                                                 <xsl:otherwise>
                                                   <xsl:if test="string-length(page:label) or string-length(page:value)">

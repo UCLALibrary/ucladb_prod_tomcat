@@ -107,6 +107,8 @@
           <script type="text/javascript" src="{$jscript-loc}grayer.js"/>
           <script type="text/javascript" src="{$jscript-loc}setRangeRadio.js"/>
 		  <script type="text/javascript" src="{$jscript-loc}normalizeCharacters.js"/>
+		  <!-- Javascript for ETAS results linking -->
+		  <script type="text/javascript" src="{$jscript-loc}etasLinking.js"/>
 
             <!-- ################################### -->
             <!-- ## WebVoyage Javascript Includes ## -->
@@ -208,7 +210,7 @@
 </xsl:variable>
 
 <!-- ## Html Body Section of the Page ## -->
-<body class="frameWorkUI" onLoad="setFocus('{/page:page/@nameId}'){$highlightNodes};grayer();timedMsg({$timeout}, {$grace}, '{$timeoutMessage}')">
+<body class="frameWorkUI" onLoad="setFocus('{/page:page/@nameId}'){$highlightNodes};linkETAS();grayer();timedMsg({$timeout}, {$grace}, '{$timeoutMessage}')">
    <div id="pageContainer">
 
 	  <!-- ## access Keys ## -->
