@@ -168,7 +168,7 @@
                                                       <xsl:value-of select="page:label"/>
                                                     </xsl:otherwise>
                                                   </xsl:choose>
-                                                <div id="etas_{$bibId}"><b>&#160;ETAS Placeholder</b></div>
+                                                <div id="etas_{$bibId}"></div>
                                                 </xsl:when>
                                                 <xsl:otherwise>
                                                   <xsl:if test="string-length(page:label) or string-length(page:value)">
