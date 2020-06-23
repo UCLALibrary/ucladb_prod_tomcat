@@ -37,6 +37,7 @@
 <xsl:variable name="resultsTitlesCSS">
    <link href="{$css-loc}resultsFacets.css" media="all" type="text/css" rel="stylesheet"/>
    <link href="{$css-loc}resultsTitles.css" media="all" type="text/css" rel="stylesheet"/>
+   <link href="{$css-loc}displayHathi.css" media="all" type="text/css" rel="stylesheet"/>
    <link href="{$css-loc}highlight.css"     media="all" type="text/css" rel="stylesheet"/>
 </xsl:variable>
 
