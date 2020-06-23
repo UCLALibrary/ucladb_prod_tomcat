@@ -16,8 +16,7 @@ async function getData(bib_ids) {
   let url = 'https://webservices-test.library.ucla.edu/hathi/data/forids/' + bib_ids;
   let response = await fetch(url);
   let data = await response.json();
-//  console.log('getData: ' + JSON.stringify(data));
-  console.log(JSON.stringify(data.items));
+  //console.log(JSON.stringify(data.items));
   data.items.forEach(addHathiInfo);
 }
 
@@ -33,7 +32,7 @@ function addHathiInfo(item) {
 	  accessMessage = 'UCLA Access';
 	}
     etasDiv.innerHTML = getHathiHTML(hathiURL, accessMessage); 
-	etasDiv.style.display = 'block';
+	etasDiv.style.display = 'flex';
   }
 }
 
@@ -42,7 +41,7 @@ function getHathiHTML(url, access) {
 	<img src="ui/ucladb/images/hathi-logo-32px.png" alt="HathiTrust logo" class="hathi-logo" />
 	<div class="hathi-item-wrapper">
 		<a href="${url}" target="_blank" class="hathi-link">Available online with HathiTrust - ${access}</a>
-		<div class="hathi-tooltip-container" id="hathi-tooltip">
+		<div class="hathi-tooltip-container" id="hathi-tooltip" onClick="toggleTooltip(this);">
 			<img src="ui/ucladb/images/icon-help_outline-white.svg" alt="Pop-up icon for more information about HathiTrust" class="hathi-help-icon" aria-label="More information about HathiTrust icon" />
 			<span class="hathi-tooltip-content" id="tooltip-popup">
 				<img src="ui/ucladb/images/icon-clear-24px.svg" class="hathi-close-icon" id="tooltip-close" alt="Close pop up icon" />
@@ -51,9 +50,13 @@ function getHathiHTML(url, access) {
 				<span class="hathi-tooltip-text"><strong>Public Domain Access</strong>: Full text available without UCLA login.</span>
 				<a href="https://www.hathitrust.org/" target="_blank" class="hathi-tooltip-text hathi-link">Learn more about HathiTrust Access</a>
 			</span>
-		</div>
+		</div
 	</div>
   `
   return hathiHTML;
+}
+
+function toggleTooltip(element) {
+  element.querySelector("#tooltip-popup").classList.toggle("show");
 }
 
