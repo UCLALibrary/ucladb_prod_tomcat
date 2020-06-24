@@ -13,7 +13,7 @@ function getBibIds() {
 }
 
 async function getData(bib_ids) {
-  let url = 'https://webservices-test.library.ucla.edu/hathi/data/forids/' + bib_ids;
+  let url = 'https://webservices.library.ucla.edu/hathi/data/forids/' + bib_ids;
   let response = await fetch(url);
   let data = await response.json();
   //console.log(JSON.stringify(data.items));
@@ -45,7 +45,6 @@ function getHathiHTML(url, access) {
 			<img src="ui/ucladb/images/icon-help_outline-white.svg" alt="Pop-up icon for more information about HathiTrust" class="hathi-help-icon" aria-label="More information about HathiTrust icon" />
 			<span class="hathi-tooltip-content" id="tooltip-popup">
 				<img src="ui/ucladb/images/icon-clear-24px.svg" class="hathi-close-icon" id="tooltip-close" alt="Close pop up icon" />
-				<span class="hathi-tooltip-text">HathiTrust Digital Library is a repository of scanned books contributed from academic institutions all over the United States, including UCLA and the University of California, etc etc etc.</span>
 				<span class="hathi-tooltip-text"><strong>UCLA Access</strong>: UCLA login required to read full text</span>
 				<span class="hathi-tooltip-text"><strong>Public Domain Access</strong>: Full text available without UCLA login.</span>
 				<a href="https://www.hathitrust.org/" target="_blank" class="hathi-tooltip-text hathi-link">Learn more about HathiTrust Access</a>

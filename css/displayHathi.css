@@ -33,20 +33,21 @@
 	background-color: #fff;
 	border: 1px solid #ef7e23;
 	border-radius: 2px;
-	margin-left: -22px;
-	padding: 1.5rem 1rem 1rem 1rem;
-	width: 300px;
+	margin-left: .75rem;
+	padding: 1rem 0.5rem 0.5rem 0.5rem;
+	width: 325px;
 	position: absolute;
-	bottom: 180%;
+	bottom: -8px;
 	z-index: 1;
 }
 
 .hathi-tooltip-container .hathi-tooltip-content::after {
 	content: "";
 	position: absolute;
-	top: 100%;
+	top: 75%;
 	left: 0;
-	margin-left: -1px;
+	transform: rotate(90deg);
+	margin-left: -24px;
 	border-width: 12px;
 	border-style: solid;
 	border-color: #ef7e23 transparent transparent transparent;
@@ -64,17 +65,17 @@
 	position: absolute;
 	top: 3%;
 	left: 92%;
-	width: 20px;
+	width: 15px;
 	cursor: pointer;
 }
 
 .hathi-tooltip-text {
 	display: block;
-	font-size: 0.875rem;
+	font-size: 0.75rem;
 }
 
 span.hathi-tooltip-text + span {
-	margin: 0.75rem 0;
+	margin: 0.5rem 0;
 }
 
 .hathi-tooltip-container .show {
