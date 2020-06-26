@@ -1,0 +1,104 @@
+/*	CSS for UCLA custom HathiTrust integration.
+ *	See VBT-1617 and related.
+*/
+
+.hathi-row-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.hathi-item-wrapper {
+	display: flex;
+	margin-left: 0.5rem;
+}
+
+.hathi-link,
+.hathi-link:active,
+.hathi-link:visited {
+	color: #0066cc;
+	text-decoration: none;
+}
+
+.hathi-link:hover {
+	text-decoration: underline;
+}
+
+.hathi-tooltip-container {
+	position: relative;
+	display: inline-block;
+}
+
+.hathi-tooltip-container .hathi-tooltip-content {
+	visibility: hidden;
+	background-color: #fff;
+	border: 1px solid #ef7e23;
+	border-radius: 2px;
+	margin-left: .75rem;
+	padding: 1rem 0.5rem 0.5rem 0.5rem;
+	width: 325px;
+	position: absolute;
+	bottom: -8px;
+	z-index: 1;
+}
+
+.hathi-tooltip-container .hathi-tooltip-content::after {
+	content: "";
+	position: absolute;
+	top: 75%;
+	left: 0;
+	transform: rotate(90deg);
+	margin-left: -24px;
+	border-width: 12px;
+	border-style: solid;
+	border-color: #ef7e23 transparent transparent transparent;
+}
+
+.hathi-help-icon {
+	margin-left: 0.25rem;
+	filter: invert(40%) sepia(29%) saturate(7413%) hue-rotate(347deg)
+		brightness(98%) contrast(91%);
+	cursor: pointer;
+}
+
+.hathi-close-icon {
+	display: inline-block;
+	position: absolute;
+	top: 3%;
+	left: 92%;
+	width: 15px;
+	cursor: pointer;
+}
+
+.hathi-tooltip-text {
+	display: block;
+	font-size: 0.75rem;
+}
+
+span.hathi-tooltip-text + span {
+	margin: 0.5rem 0;
+}
+
+.hathi-tooltip-container .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+

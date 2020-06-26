@@ -58,6 +58,10 @@
 
             <!-- ## result record ## -->
             <div class="{$classPosition}">
+			    <!-- Capture bib id for later use -->
+				<xsl:variable name="bibId">
+				    <xsl:value-of select="page:value"/>
+				</xsl:variable>
                 <xsl:if test="$buttonCount > 0">
                     <xsl:variable name="checkBoxId">
                         <xsl:value-of select="page:value"/>
@@ -156,19 +160,20 @@
                                         <xsl:otherwise>
                                             <xsl:choose>
                                                 <xsl:when test="@nameId='page.searchResults.contents.line5'">
-<xsl:choose>
-<xsl:when test="contains(page:label,'owned')">
-<xsl:value-of select="concat('available to order, ', substring(page:label,12))"/>
-</xsl:when>
-<xsl:otherwise>
-                                                   <xsl:value-of select="page:label"/>
-</xsl:otherwise>
-</xsl:choose>
+                                                  <xsl:choose>
+                                                    <xsl:when test="contains(page:label,'owned')">
+                                                      <xsl:value-of select="concat('available to order, ', substring(page:label,12))"/>
+                                                    </xsl:when>
+                                                    <xsl:otherwise>
+                                                      <xsl:value-of select="page:label"/>
+                                                    </xsl:otherwise>
+                                                  </xsl:choose>
+                                                <div class="hathi-row-wrapper" id="etas_{$bibId}" style="display: none;"></div>
                                                 </xsl:when>
                                                 <xsl:otherwise>
-<xsl:if test="string-length(page:label) or string-length(page:value)">
-                                                   <xsl:value-of select="page:label"/>&#160;<xsl:value-of select="page:value"/>
-</xsl:if>
+                                                  <xsl:if test="string-length(page:label) or string-length(page:value)">
+                                                    <xsl:value-of select="page:label"/>&#160;<xsl:value-of select="page:value"/>
+                                                  </xsl:if>
                                                 </xsl:otherwise>
                                             </xsl:choose>
                                         </xsl:otherwise>
