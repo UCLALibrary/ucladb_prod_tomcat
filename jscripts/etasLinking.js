@@ -120,17 +120,20 @@ function getHathiRecordHTML(url, access) {
       <ul title="Holdings Record Display">
         <li class="bibTag">
           <span class="fieldLabelSpan">Online Access:</span>
-		  <span class="hathi-item-wrapper subfieldData">
-    		<a href="${url}" target="_blank" class="hathi-link">Read online at HathiTrust - ${access}</a>
-	    	<div class="hathi-tooltip-container" id="hathi-tooltip" onClick="toggleTooltip(this);">
-		    	<img src="ui/ucladb/images/icon-help_outline-white.svg" alt="Pop-up icon for more information about HathiTrust" class="hathi-help-icon" aria-label="More information about HathiTrust icon" />
-			    <span class="hathi-tooltip-content" id="tooltip-popup">
-				    <img src="ui/ucladb/images/icon-clear-24px.svg" class="hathi-close-icon" id="tooltip-close" alt="Close pop up icon" />
-				    <span class="hathi-tooltip-text"><strong>UCLA Access</strong>: UCLA login required to read full text</span>
-				    <span class="hathi-tooltip-text"><strong>Public Domain Access</strong>: Full text available without UCLA login.</span>
-				    <a href="https://www.hathitrust.org/" target="_blank" class="hathi-tooltip-text hathi-link">Learn more about HathiTrust Access</a>
-			    </span>
-		    </div
+		  <div class="hathi-row-wrapper">
+		    <img src="ui/ucladb/images/hathi-logo-32px.png" alt="HathiTrust logo" class="hathi-logo" />
+		    <span class="hathi-item-wrapper subfieldData">
+    		  <a href="${url}" target="_blank" class="hathi-link">Read online at HathiTrust - ${access}</a>
+	    	  <div class="hathi-tooltip-container" id="hathi-tooltip" onClick="toggleTooltip(this);">
+		    	  <img src="ui/ucladb/images/icon-help_outline-white.svg" alt="Pop-up icon for more information about HathiTrust" class="hathi-help-icon" aria-label="More information about HathiTrust icon" />
+			      <span class="hathi-tooltip-content" id="tooltip-popup">
+				      <img src="ui/ucladb/images/icon-clear-24px.svg" class="hathi-close-icon" id="tooltip-close" alt="Close pop up icon" />
+				      <span class="hathi-tooltip-text"><strong>UCLA Access</strong>: UCLA login required to read full text</span>
+				      <span class="hathi-tooltip-text"><strong>Public Domain Access</strong>: Full text available without UCLA login.</span>
+				      <a href="https://www.hathitrust.org/" target="_blank" class="hathi-tooltip-text hathi-link">Learn more about HathiTrust Access</a>
+			      </span>
+			  </div
+			</div>
 		  </span>
         </li>
       </ul>
