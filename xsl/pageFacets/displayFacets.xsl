@@ -26,7 +26,8 @@
     xmlns:slim="http://www.loc.gov/MARC21/slim">
 
 <xsl:include href="../local_googleBooksAvail.xsl"/>
-<xsl:include href="../local_hathiTrustAvail.xsl"/>
+<!-- 2020-06-30 akohler: Disable sidebar Hathi info while ETAS is being used -->
+<!-- <xsl:include href="../local_hathiTrustAvail.xsl"/> -->
 
 <!-- ###################################################################### -->
 
