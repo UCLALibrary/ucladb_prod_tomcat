@@ -91,7 +91,7 @@ function displayHathiRecord(item) {
   let etasDiv = document.getElementById('etas_record');
   if (etasDiv) {
     etasDiv.innerHTML = getHathiRecordHTML(item.hathiURL, item.accessMessage);
-	etasDiv.style.display = 'flex';
+	etasDiv.style.display = 'block';
   }
 }
 
