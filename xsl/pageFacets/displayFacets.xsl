@@ -26,7 +26,8 @@
     xmlns:slim="http://www.loc.gov/MARC21/slim">
 
 <xsl:include href="../local_googleBooksAvail.xsl"/>
-<xsl:include href="../local_hathiTrustAvail.xsl"/>
+<!-- 2020-06-30 akohler: Disable sidebar Hathi info while ETAS is being used -->
+<!-- <xsl:include href="../local_hathiTrustAvail.xsl"/> -->
 
 <!-- ###################################################################### -->
 
@@ -141,9 +142,12 @@
 			 <!-- Add Hathi Trust template -->
 			 <div style="display:none;" id="fulltext_label">
 			   <label>Read online</label>
+				 <!-- 2020-07-01 akohler: Disable call to Hathi sidebar template -->
+				 <!--
     			 <div id="hathiRow">
 	    		   <xsl:call-template name="hathiTrustAvail"/>
 		    	 </div>
+				 -->
                 <!-- ## mdp add the google book template ## -->
                 <div id="googleBooksRow">
                    <xsl:call-template name="googleBooksAvail"/>

@@ -191,6 +191,8 @@ function highlightRecordDisplay(searchTerms) {
    }
 
     for (var arrCount = 0; arrCount < myNodes.length; arrCount++ ) {
+		// Final element in myNodes[] is usually null... check it! akohler 2020-06-29
+	  if (myNodes[arrCount]) {
         var htmlChunk = myNodes[arrCount].innerHTML;
 
         /* Loop thru the html by searchterm */
@@ -202,7 +204,8 @@ function highlightRecordDisplay(searchTerms) {
 
         /* reassign the innerHTML to the newly highlighted chunk */
         myNodes[arrCount].innerHTML = htmlChunk;
-    }
+      }
+	}
    return true;
 }
 

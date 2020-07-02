@@ -47,6 +47,8 @@ function listBookEntries(booksInfo)
       var book = booksInfo[i];
       if (book.bib_key)
       {
+		 // 2020-07-01 akohler: Turn on the "Read online" div which contains Google and Hathi (now disabled) links
+		 document.getElementById('fulltext_label').style.display = '';
          document.getElementById('googleBooksRow').style.display = '';  
          document.getElementById('googleBooks').style.display = 'block';  
          var thumbnailDiv = document.createElement("div");

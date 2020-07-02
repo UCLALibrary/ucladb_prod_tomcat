@@ -43,6 +43,7 @@
 		<link href="{$css-loc}displayCommon.css"      media="all" type="text/css" rel="stylesheet"/>
 		<link href="{$css-loc}highlight.css"          media="all" type="text/css" rel="stylesheet"/>
 		<link href="{$css-loc}displayGoogleBooks.css" media="all" type="text/css" rel="stylesheet"/>
+		<link href="{$css-loc}displayHathi.css" media="all" type="text/css" rel="stylesheet"/>
 	</xsl:variable>
 	
 	<xsl:variable name="myJavascripts">

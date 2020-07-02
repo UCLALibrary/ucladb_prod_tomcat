@@ -2002,12 +2002,22 @@
 <!-- ###################################################################### -->
 
 <xsl:template name="BMD9000">
-
     <xsl:variable name="holdingsData">
+		<!-- Insert a div before all in-Voyager holdings, for Hathi/Google access -->
+		<div class="displayHoldings" id="etas_record" style="display: none;">
+		  <!-- Hack to store bib id in HTML in an easy to access place -->
+		  <input type="hidden" value="{$bibID}" id="etas_bibid"/>
+		  <div class="evenHoldingsRow">
+		    <ul title="Holdings Record Display">
+			  <li class="bibTag">
+			    <span class="fieldLabelSpan">Online Access:</span><span class="subfieldData">Hathi Access (PLACEHOLDER)</span>
+			  </li>
+			</ul>
+		  </div>
+		</div>
         <xsl:for-each select="$HoldXML/mfhd:mfhdRecord">
 
             <xsl:variable name="mfhdId" select="@mfhdId"/>
-
             <!-- ## variable used for alternating color ## -->
             <xsl:variable name="classPosition">
                 <xsl:choose>
