@@ -1,14 +1,10 @@
 function linkETAS() {
   let page_info = getBibIds();
   if (page_info.bib_ids) {
-    //hathi_data.items.forEach(addHathiInfo);
-	console.log(page_info.bib_ids);
 	// Async functions return Promises
 	getData(page_info.bib_ids)
 	.then(function(data) {
-	  //console.log('RESULT: ' , data);
 	  items = addHathiInfo(data.items);
-	  console.log('ADDED: ', items);
 	  
 	  // Handle results page
 	  if (page_info.etas_type === 'results') {
@@ -56,7 +52,6 @@ async function getData(bib_ids) {
   let url = 'https://webservices.library.ucla.edu/hathi/data/forids/' + bib_ids;
   let response = await fetch(url);
   let data = await response.json();
-  console.log('DATA: ' , data);
   return data;
 }
 
