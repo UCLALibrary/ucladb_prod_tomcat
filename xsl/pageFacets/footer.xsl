@@ -32,6 +32,9 @@
 
    <xsl:for-each select="/page:page/page:pageFooter">
       <div id="pageFooter">
+          <!-- Add LibChat floating widget to the footer -->
+           <script src="https://v2.libanswers.com/load_chat.php?hash=5a44dfe7cc29aaee5bba635ab13fa753"></script>
+           <div id="libchat_5a44dfe7cc29aaee5bba635ab13fa753"></div>
          <xsl:for-each select="page:tabs[@nameId='page.footer.buttons']">
             
             <div id="footerTabs" title="{$footerText/footerTabs}">
