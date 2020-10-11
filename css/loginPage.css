@@ -22,6 +22,12 @@
   font-weight: bold;
 }
 
+.chrome-alert {
+  margin-top: 16px;
+  color: red;
+  font-weight: bold;
+}
+
 #loginForm {
   max-width: 414px;
   padding: 10px 17px;
