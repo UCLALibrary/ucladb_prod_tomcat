@@ -165,7 +165,6 @@
       <page name="page.logIn" position="aboveContent">
         <div class="yaleLoginInstructionText">
 	  <span class="logonbold">UCLA students, faculty, and staff:</span><span class="loginonce"> use your UCLA Logon to renew your library materials, request items, and to check your library account.</span><br/>
-      <p class="chrome-alert">UCLA Logon is not working in Chrome--please use another browser.</p>
 	</div>
         <div class="LoginInstructionText">
           <p>
