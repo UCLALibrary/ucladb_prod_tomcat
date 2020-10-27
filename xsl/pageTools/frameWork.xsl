@@ -53,7 +53,8 @@
    <xsl:variable name="highlightNodes">
       <xsl:variable name="terms">
          <xsl:for-each select="//page:element[@nameId='page.searchResults.term']">
-            <xsl:value-of select="page:value"/><xsl:value-of select="' '"/>
+            <!-- 2020-10-26 akohler: Replace apostrophe with space, or downstream javascript breaks.... -->
+            <xsl:value-of select='translate(page:value, "&apos;", " ")'/><xsl:value-of select="' '"/>
           </xsl:for-each>
       </xsl:variable>
       <xsl:choose>
