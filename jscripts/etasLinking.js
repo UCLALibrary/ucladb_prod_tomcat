@@ -58,10 +58,11 @@ async function getData(bib_ids) {
 function addHathiInfo(items) {
   // Augments data from web service by adding URL and message to each item
   items.forEach(function(item) {
-    if (item.accessLevel) {
+    if (item.hathiBibKey) {
       item.hathiURL = 'https://catalog.hathitrust.org/Record/' + item.hathiBibKey;
       item.accessMessage = 'Public Domain Access';
-      if (item.accessLevel === 'deny') {
+      // Treat undefined access as "deny", requiring login during ETAS
+      if ( (item.accessLevel === 'deny') || (! item.accessLevel) ) {
         item.hathiURL += '?signon=swle:urn:mace:incommon:ucla.edu';
 	    item.accessMessage = 'UCLA Access';
       }
