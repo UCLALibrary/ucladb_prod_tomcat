@@ -236,7 +236,7 @@
 
 <div id="dtrMixingContent">
 <div>
-UCLA Library staff are working remotely to provide expert help and online services to advance remote teaching and learning. All Library buildings are closed and Library Catalog services such as Requests and Recalls are suspended until further notice. <a href="https://www.library.ucla.edu/remote" target="_blank">DISCOVER REMOTE LEARNING TOOLS</a>.
+Summer Library Update: On July 27, <a href="https://www.library.ucla.edu/uc-library-search" target="_blank">UC Library Search</a> will go-live, replacing the UCLA Library Catalog and Melvyl. <a href="https://www.library.ucla.edu/covid-19-response-library-information-resources" target="_blank">Remote services</a> continue and in-person <a href="https://www.library.ucla.edu/access-privileges/library-reservations" target="_blank">seat reservations</a> are available for BruinCard holders.
 </div>
 <br/>
 		  <div id="pageHeadingTitle">
