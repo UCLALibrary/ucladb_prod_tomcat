@@ -236,7 +236,7 @@
 
 <div id="dtrMixingContent">
 <div>
-<a href="https://www.library.ucla.edu/uc-library-search" target="_blank">UC Library Search</a>, replacing the UCLA Library Catalog and Melvyl, is expected to launch on July 28. Digitization (PETDOR) and interlibrary loan are temporarily unavailable. Please email yrl-ill-b@library.ucla.edu for urgent issues regarding these services.
+<a href="https://search.library.ucla.edu/" target="_blank">UC Library Search is Here!</a> ** Please use our new, improved discovery tool, UC Library Search, which connects all 10 campus libraries through a unified platform. This catalog will soon be retired.
 </div>
 <br/>
 		  <div id="pageHeadingTitle">
