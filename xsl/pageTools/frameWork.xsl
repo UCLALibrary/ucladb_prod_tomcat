@@ -236,7 +236,7 @@
 
 <div id="dtrMixingContent">
 <div>
-Summer Library Update: On July 27, <a href="https://www.library.ucla.edu/uc-library-search" target="_blank">UC Library Search</a> will go-live, replacing the UCLA Library Catalog and Melvyl. <a href="https://www.library.ucla.edu/covid-19-response-library-information-resources" target="_blank">Remote services</a> continue and in-person <a href="https://www.library.ucla.edu/access-privileges/library-reservations" target="_blank">seat reservations</a> are available for BruinCard holders.
+<a href="https://www.library.ucla.edu/uc-library-search" target="_blank">UC Library Search</a>, replacing the UCLA Library Catalog and Melvyl, is expected to launch on July 28. Digitization (PETDOR) and interlibrary loan are temporarily unavailable. Please email yrl-ill-b@library.ucla.edu for urgent issues regarding these services.
 </div>
 <br/>
 		  <div id="pageHeadingTitle">
